@@ -1,7 +1,20 @@
 ### Project specs
 
-There should be two classes: one for Bread and one for Pastry.
+- There should be two classes: one for Bread and one for Pastry.
+- Bread class should calculate cost of bread a with buy 2, get 1 free deal
+- Pastry class should calculate cost of bread a with buy 3, get 1 free deal
+- Prompt should show welcome message and bread/pastry prices
+- Capture user input for number of loaves/pastries
+- Calculate total cost of order
 
+#### Bread 
+- $5/each 
+- Buy 2, get 1 free
+
+#### Pastry
+- $2/each
+- Buy 3, get 1 free
+ 
 When the user runs the application, they should receive a prompt with a welcome message along with the cost for both Bread and Pastry.
 
 A user should be able to specify how many loaves of Bread and how many Pastrys they'd like.
