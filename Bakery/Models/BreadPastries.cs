@@ -36,6 +36,7 @@ namespace Bakery
   public class Pastry
   {
    public int price = 0;
+   public int priceEachPastry = 2;
 
     public int CalculatePrice(int numberOfPastries)
     {
@@ -54,8 +55,9 @@ namespace Bakery
         }
         else if (numberOfPastries >= 4)
         {
-           int dealPrice = numberOfPastries / 4 * 3;
-            price = dealPrice * 2;
+           int dealPastries = numberOfPastries / 4;
+           int remainderPastries = numberOfPastries % 4 ;
+          price = (priceEachPastry * remainderPastries) + (dealPastries * 3 * priceEachPastry);
         }
 
         return price;
