@@ -23,7 +23,7 @@ namespace Bakery.Tests
         Assert.AreEqual(expectedResult, result);
 
     }
-    [TestMethod]
+   [TestMethod]
     public void CalculatePriceTwoLoaves_ValidInput_ReturnsPrice()
     {
         int numberOfLoaves = 2;
@@ -31,6 +31,16 @@ namespace Bakery.Tests
         Bread bread = new Bread();
         int result = bread.CalculatePrice(numberOfLoaves);
         Assert.AreEqual(expectedResult, result);
+    }
+    [TestMethod]
+
+    public void CalculatePricePastry_ValidInput_ReturnsPrice()
+    {
+      int numberOfPastries = 6;
+      int expectedResult = 10;
+      Pastry pastry = new Pastry();
+      int result = pastry.CalculatePrice(numberOfPastries);
+      Assert.AreEqual(expectedResult, result);
     }
 
   }
