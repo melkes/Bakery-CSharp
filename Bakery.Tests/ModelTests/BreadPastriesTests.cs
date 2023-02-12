@@ -13,20 +13,25 @@ namespace Bakery.Tests
     }
     
     [TestMethod]
+    // NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue
     public void CalculatePrice_ValidInput_ReturnsPrice()
     {
-        // Arrange
-        int numberOfLoaves = 3;
+        int numberOfLoaves = 6;
+        int expectedResult = 20;
         Bread bread = new Bread();
-        decimal expectedResult = 10;
+        int result = bread.CalculatePrice(numberOfLoaves);
+        Assert.AreEqual(expectedResult, result);
 
-        // Act
-        decimal result = bread.CalculatePrice(numberOfLoaves);
-
-        // Assert
+    }
+    [TestMethod]
+    public void CalculatePriceTwoLoaves_ValidInput_ReturnsPrice()
+    {
+        int numberOfLoaves = 2;
+        int expectedResult = 10;
+        Bread bread = new Bread();
+        int result = bread.CalculatePrice(numberOfLoaves);
         Assert.AreEqual(expectedResult, result);
     }
-    // [TestMethod]
 
   }
 }
