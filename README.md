@@ -1,3 +1,40 @@
+# Pierre's Bakery
+
+## By Mike Wilkes
+
+### A C# console application for a bakery
+
+Users are given a welcome message and a price list for bread and pastry. Bread is $5 with a discount of 3 for the price of 2, while pastry is $2 with a 4 for 3 discount. User is then asked to enter a number for loaves of bread to order, followed by a prompt to enter the number of pastries. The application then prints the total cost of the order
+
+---
+
+## Technologies Used
+
+* C#
+* .NET
+* MSTest
+* Git
+
+## Setup/Installation Requirements
+
+* Clone this repository
+* Navigate to the Bakery directory
+* In a terminal window, run:
+  * `dotnet restore`
+  * `dotnet run`
+### To run the unit tests
+* Install MSTest
+* Navigate to the Bakery.Tests directory
+* In the terminal window, enter:
+  * `dotnet test`
+
+## Roadmap
+### Future development could include:
+* Allow users to buy different kinds of Bread and Pastry.
+* Add additional deals.
+* Use class inheritance to DRY up code for the Bread and Pastry class.
+* Allow users to keep adding to an order by using static variables.
+
 ### Project specs
 
 - There should be two classes: one for Bread and one for Pastry.
@@ -14,30 +51,27 @@
 #### Pastry
 - $2/each
 - Buy 3, get 1 free
- 
-When the user runs the application, they should receive a prompt with a welcome message along with the cost for both Bread and Pastry.
 
-A user should be able to specify how many loaves of Bread and how many Pastrys they'd like.
+## License
 
-The application will return the total cost of the order.
+MIT License
 
-Pierre offers the following deal for Bread: Buy 2, get 1 free. A single loaf costs $5, then:
+Copyright (c) _2023_ _Mike Wilkes_ 
 
-two loaves costs $10
-three loaves cost $10
-four loaves costs $15
-five loaves cost $20
-six loaves costs $20
-seven loaves cost $25
-Can you see a pattern? Every 3rd loaf of bread is free.
-Pierre offers the following deal for Pastry: Buy 3, get 1 free. A single pastry costs $2, then:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-two pastries costs $4
-three pastries costs $6
-four pastries costs $6
-five pastries costs $8
-six pastries costs $10
-seven pastries costs $12
-eight pastries costs $12
-Can you see a pattern? Every 4th pastry is free.
-All functionality for the business logic models should be tested.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
