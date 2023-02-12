@@ -23,7 +23,7 @@ namespace Bakery.Tests
         Assert.AreEqual(expectedResult, result);
 
     }
-   [TestMethod]
+    [TestMethod]
     public void CalculatePriceTwoLoaves_ValidInput_ReturnsPrice()
     {
         int numberOfLoaves = 2;
