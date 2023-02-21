@@ -4,24 +4,19 @@ using Bakery;
 
 namespace Bakery.Tests
 {
-  [TestClass]
-  public class ItemTests : IDisposable
-  {
-      public void Dispose()
-    {
-      Bread.ClearAll();
-    }
-    
+[TestClass]
+
+  public class BreadTests
+  { 
     [TestMethod]
-    // NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue
+
     public void CalculatePrice_ValidInput_ReturnsPrice()
     {
         int numberOfLoaves = 6;
         int expectedResult = 20;
         Bread bread = new Bread();
-        int result = bread.CalculatePrice(numberOfLoaves);
+        int result = bread.CalculatePriceBread(numberOfLoaves);
         Assert.AreEqual(expectedResult, result);
-
     }
     [TestMethod]
     public void CalculatePriceTwoLoaves_ValidInput_ReturnsPrice()
@@ -29,17 +24,21 @@ namespace Bakery.Tests
         int numberOfLoaves = 2;
         int expectedResult = 10;
         Bread bread = new Bread();
-        int result = bread.CalculatePrice(numberOfLoaves);
+        int result = bread.CalculatePriceBread(numberOfLoaves);
         Assert.AreEqual(expectedResult, result);
     }
-    [TestMethod]
+  }
+  [TestClass]
 
+  public class PastryTests
+  {
+    [TestMethod]
     public void CalculatePricePastry_ValidInput_ReturnsPrice()
     {
       int numberOfPastries = 6;
       int expectedResult = 10;
       Pastry pastry = new Pastry();
-      int result = pastry.CalculatePrice(numberOfPastries);
+      int result = pastry.CalculatePricePastry(numberOfPastries);
       Assert.AreEqual(expectedResult, result);
     }
     [TestMethod]
@@ -50,7 +49,7 @@ namespace Bakery.Tests
       Pastry pastry = new Pastry();
       Bread bread = new Bread();
       int expectedResult = 20;
-      int result = pastry.CalculatePrice(numberOfPastries) + bread.CalculatePrice(numberOfLoaves);
+      int result = pastry.CalculatePricePastry(numberOfPastries) + bread.CalculatePriceBread(numberOfLoaves);
       Assert.AreEqual(expectedResult, result);
     }
   }

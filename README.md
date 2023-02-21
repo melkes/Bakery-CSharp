@@ -1,12 +1,8 @@
 # Pierre's Bakery
 
-## By Mike Wilkes
+#### By Mike Wilkes
 
-### A C# console application for a bakery
-
-Users are given a welcome message and a price list for bread and pastry. Bread is $5 with a discount of 3 for the price of 2, while pastry is $2 with a 4 for 3 discount. User is then asked to enter a number for loaves of bread to order, followed by a prompt to enter the number of pastries. The application then prints the total cost of the order
-
----
+#### A C# console application for a bakery
 
 ## Technologies Used
 
@@ -15,6 +11,9 @@ Users are given a welcome message and a price list for bread and pastry. Bread i
 * MSTest
 * Git
 
+## Description
+Users are given a welcome message and a price list for bread and pastry. Bread is $5 with a discount of 3 for the price of 2, while pastry is $2 with a 4 for 3 discount. User is then asked to enter a number for loaves of bread to order, followed by a prompt to enter the number of pastries. The application then prints the total cost of the order
+
 ## Setup/Installation Requirements
 
 * Clone this repository
@@ -22,11 +21,14 @@ Users are given a welcome message and a price list for bread and pastry. Bread i
 * In a terminal window, run:
   * `dotnet restore`
   * `dotnet run`
-### To run the unit tests
+#### Run the unit tests
 * Install MSTest
 * Navigate to the Bakery.Tests directory
 * In the terminal window, enter:
   * `dotnet test`
+
+### Known Bugs
+No known bugs at this time.
 
 ## Roadmap
 ### Future development could include:

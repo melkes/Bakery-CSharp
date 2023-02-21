@@ -21,7 +21,7 @@ namespace Bakery
         Bread bread = new Bread();
         Pastry pastry = new Pastry();
 
-        int totalPrice = bread.CalculatePrice(inputBread) + pastry.CalculatePrice(inputPastry);
+        int totalPrice = bread.CalculatePriceBread(inputBread) + pastry.CalculatePricePastry(inputPastry);
         Console.Write("The total price of your order is: $" + totalPrice);
       }
       else
@@ -29,7 +29,6 @@ namespace Bakery
         Console.WriteLine("Something went wrong, or you entered 0 for both bread and pastry orders. Try again!");
         Main();
       }
-
     }
   }
 }
